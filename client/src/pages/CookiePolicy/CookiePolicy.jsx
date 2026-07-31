@@ -1,0 +1,3 @@
+import LegalPage from "../../components/common/LegalPage";
+const sections = [{ title: "What cookies are", text: "Cookies are small files stored on your device that help websites remember information about your visit." }, { title: "How we use cookies", text: "We use essential cookies for website operation and may use analytics cookies to understand how visitors use our site." }, { title: "Managing cookies", text: "You can control cookies through your browser settings. Disabling some cookies may affect how parts of the site work." }];
+export default function CookiePolicy() { return <LegalPage title="Cookie Policy" description="How NextGenAI uses cookies on this website." path="/cookie-policy" sections={sections} />; }

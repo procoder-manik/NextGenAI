@@ -1,0 +1,7 @@
+import { useMemo, useState } from "react";
+import PageHero from "../../components/common/PageHero";
+import FaqAccordion from "../../components/common/FaqAccordion";
+import Section from "../../components/ui/Section";
+import SEO from "../../seo/SEO";
+import { faqs } from "../../data/siteData";
+export default function FAQ() { const [search, setSearch] = useState(""); const items = useMemo(() => faqs.filter((item) => `${item.question} ${item.answer}`.toLowerCase().includes(search.toLowerCase())), [search]); return <><SEO title="FAQs" description="Answers to common questions about working with NextGenAI." path="/faq" /><PageHero eyebrow="FAQ" title="Answers before you need them." description="A few helpful details about our work, process, and partnership." /><Section><div className="mx-auto max-w-3xl"><label className="sr-only" htmlFor="faq-search">Search questions</label><input id="faq-search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search questions" className="mb-7 w-full rounded-lg border p-4" /><div className="mb-6 flex gap-2"><span className="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white">General</span><span className="rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold">Services</span><span className="rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold">Process</span></div>{items.length ? <FaqAccordion items={items} /> : <p className="text-slate-600">No questions match your search.</p>}</div></Section></>; }

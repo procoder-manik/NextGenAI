@@ -1,0 +1,1 @@
+const {z}=require("zod");exports.registerSchema=z.object({name:z.string().min(2).max(80),email:z.email(),password:z.string().min(8).max(128),role:z.enum(["admin","editor"]).optional()});exports.loginSchema=z.object({email:z.email(),password:z.string().min(1)});

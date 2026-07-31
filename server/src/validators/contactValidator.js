@@ -1,0 +1,1 @@
+const {z}=require("zod");exports.contactSchema=z.object({name:z.string().min(2).max(100),email:z.email(),company:z.string().max(120).optional(),phone:z.string().max(30).optional(),message:z.string().min(10).max(3000)});exports.newsletterSchema=z.object({email:z.email()});

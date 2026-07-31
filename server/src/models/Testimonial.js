@@ -1,0 +1,1 @@
+const mongoose = require("mongoose"); module.exports = mongoose.model("Testimonial", new mongoose.Schema({ name: { type: String, required: true }, role: String, company: String, quote: { type: String, required: true }, image: String, featured: { type: Boolean, default: false }, published: { type: Boolean, default: true } }, { timestamps: true }));

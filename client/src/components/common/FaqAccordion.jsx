@@ -1,0 +1,3 @@
+import { useState } from "react";
+
+export default function FaqAccordion({ items }) { const [open, setOpen] = useState(0); return <div className="divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white">{items.map((item, index) => <div key={item.question}><button type="button" className="flex w-full items-center justify-between gap-6 px-6 py-5 text-left font-semibold" onClick={() => setOpen(open === index ? -1 : index)} aria-expanded={open === index}><span>{item.question}</span><span className="text-xl text-blue-600">{open === index ? "−" : "+"}</span></button>{open === index && <p className="px-6 pb-5 leading-7 text-slate-600">{item.answer}</p>}</div>)}</div>; }

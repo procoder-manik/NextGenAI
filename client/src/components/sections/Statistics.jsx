@@ -1,0 +1,2 @@
+import Section from "../ui/Section"; import { stats } from "../../data/siteData";
+export default function Statistics() { return <Section className="bg-slate-950 text-white"><div className="grid gap-8 text-center sm:grid-cols-2 lg:grid-cols-4">{stats.map((stat) => <div key={stat.label}><p className="text-4xl font-bold text-cyan-300">{stat.value}</p><p className="mt-2 text-sm text-slate-300">{stat.label}</p></div>)}</div></Section>; }
