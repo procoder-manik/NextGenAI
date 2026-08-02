@@ -4,6 +4,8 @@
 👉 <a href="https://nextgenaiproject.netlify.app/" target="_blank">Netlify Live Demo</a>  👉 <a href="https://nextgenainew.netlify.app/" target="_blank">Netlify Live 2.0</a> <br>
 👉 <a href="https://9x20vp58-5173.asse.devtunnels.ms/" target="_blank">Development Live Demo</a> <br>
 
+Live URL: https://9x20vp58-5173.asse.devtunnels.ms/
+
 A modern, scalable, production-ready MERN Stack business website designed for digital agencies, AI solution providers, software companies, and startups.
 
 This project is built with performance, security, SEO, accessibility, and scalability in mind. It includes a public-facing website, blog management system, admin dashboard, authentication, and REST API backend.
