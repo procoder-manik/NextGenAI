@@ -1,7 +1,8 @@
 # 🚀 NextGenAI - AI & Digital Solutions Platform 
-👉 Live URI: https://9x20vp58-5173.asse.devtunnels.ms/ <br>
-👉 Vercel Live URI: https://next-gen-ai-dun.vercel.app/ <br>
-👉 Netlify Live URI: https://nextgenaiproject.netlify.app/
+
+👉 <a href="https://next-gen-ai-dun.vercel.app/" target="_blank">Vercel Live Demo</a> <br>
+👉 <a href="https://nextgenaiproject.netlify.app/" target="_blank">Netlify Live Demo</a> <br>
+👉 <a href="https://9x20vp58-5173.asse.devtunnels.ms/" target="_blank">Development Live Demo</a> <br>
 
 A modern, scalable, production-ready MERN Stack business website designed for digital agencies, AI solution providers, software companies, and startups.
 
