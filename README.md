@@ -498,10 +498,9 @@ This project is licensed under the MIT License.
 
 # 📬 Contact
 
-Email: info@nextgenai.com
+Email: mainkhstu1@gmail.com
 
-Website: https://nextgenai.com
-
+Website: https://manikhossain.in/
 ---
 
 # ⭐ Support
