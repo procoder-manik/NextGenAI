@@ -492,7 +492,7 @@ This project is licensed under the MIT License.
 
 # 👤 Author
 
-**NextGenAI Development Team**
+[**Manik Hossain**](https://manikhossain.in/)
 
 ---
 
