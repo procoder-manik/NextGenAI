@@ -4,263 +4,308 @@
 👉 <a href="https://nextgenaiproject.netlify.app/" target="_blank">Netlify Live Demo</a>  👉 <a href="https://nextgenainew.netlify.app/" target="_blank">Netlify Live 2.0</a> <br>
 👉 <a href="https://9x20vp58-5173.asse.devtunnels.ms/" target="_blank">Development Live Demo</a> <br>
 
-Live URL: https://9x20vp58-5173.asse.devtunnels.ms/
-
-A modern, scalable, production-ready MERN Stack business website designed for digital agencies, AI solution providers, software companies, and startups.
-
-This project is built with performance, security, SEO, accessibility, and scalability in mind. It includes a public-facing website, blog management system, admin dashboard, authentication, and REST API backend.
+NextGenAI is a full-stack marketing website for AI and digital services businesses. It includes a public-facing React frontend, a secure Express backend, MongoDB data storage, and an admin dashboard for content management.
 
 ---
 
-# 📌 Project Overview
+# 📌 What’s Included
 
-NextGenAI is a full-stack web application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).
-
-The project follows industry-standard architecture and best practices to ensure:
-
-- High Performance
-- Security
-- Scalability
-- Maintainability
-- SEO Optimization
-- AI Search Optimization
-- Responsive Design
-- Clean Code Structure
+- Public website pages: Home, About, Services, Blog, Contact, FAQ, Policies
+- Blog CMS with listing and details pages
+- Contact form with email and database storage
+- Admin dashboard with secure JWT login
+- Content management for blogs, services, FAQs, testimonials, portfolio, and team
+- Cloudinary file uploads and email notifications
+- Dark mode support and responsive UI
 
 ---
 
-# ✨ Features
-
-## 🌐 Public Website
-
-- Modern Landing Page
-- About Page
-- Services Page
-- Service Details
-- Blog Listing
-- Blog Details
-- Contact Page
-- FAQ
-- Privacy Policy
-- Terms & Conditions
-- Cookie Policy
-- 404 Error Page
-
----
-
-## 👨‍💼 Admin Dashboard
-
-- Secure Login
-- Dashboard Analytics
-- Blog Management
-- Services Management
-- FAQ Management
-- Testimonials Management
-- Contact Message Management
-- Newsletter Subscribers
-- SEO Settings
-- Website Settings
-
----
-
-## 📝 Blog CMS
-
-- Create Blog
-- Update Blog
-- Delete Blog
-- Categories
-- Tags
-- Featured Image
-- SEO Metadata
-- Rich Content Support
-
----
-
-## 📩 Contact System
-
-- Contact Form
-- Email Notification
-- Database Storage
-- Spam Protection
-- Form Validation
-
----
-
-## 🔐 Authentication
-
-- JWT Authentication
-- Protected Routes
-- Role Based Access
-- Admin Authorization
-- Password Encryption
-
----
-
-## 📈 SEO Features
-
-- Meta Tags
-- Open Graph
-- Twitter Cards
-- Canonical URLs
-- Robots.txt
-- Sitemap.xml
-- JSON-LD Schema
-- Organization Schema
-- Service Schema
-- Blog Schema
-- FAQ Schema
-
----
-
-## 🤖 AI Optimization
-
-Designed to be discoverable by modern AI systems including:
-
-- ChatGPT
-- Google AI Overview
-- Gemini
-- Claude
-- Perplexity
-
----
-
-# 🏗️ Technology Stack
+# 🧱 Tech Stack
 
 ## Frontend
-
-- React 19
+- React
 - Vite
-- React Router DOM
 - Tailwind CSS
+- React Router DOM
 - Axios
 - Framer Motion
-- React Helmet Async
-- React Hook Form
-- React Icons
-
----
+- Zustand
 
 ## Backend
-
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
 - JWT
-- Bcrypt
-- Multer
-- Cloudinary
-- Nodemailer
+- bcryptjs
+- nodemailer
+- multer
 
 ---
 
-## Security
-
-- Helmet
-- CORS
-- Rate Limiting
-- Input Validation
-- Password Hashing
-- Environment Variables
-- XSS Protection
-
----
-
-# 📂 Project Structure
+# 📂 Repository Structure
 
 ```
 NextGenAI/
-
-│
-
 ├── client/
-
 │   ├── public/
-
 │   ├── src/
-
-│   │
-
-│   ├── assets/
-
-│   ├── components/
-
-│   ├── config/
-
-│   ├── context/
-
-│   ├── data/
-
-│   ├── hooks/
-
-│   ├── layouts/
-
-│   ├── pages/
-
-│   ├── router/
-
-│   ├── services/
-
-│   ├── store/
-
-│   ├── styles/
-
-│   ├── utils/
-
-│   │
-
+│   │   ├── assets/
+│   │   ├── components/
+│   │   │   ├── cards/
+│   │   │   ├── common/
+│   │   │   ├── footer/
+│   │   │   ├── forms/
+│   │   │   ├── layout/
+│   │   │   ├── loaders/
+│   │   │   ├── navigation/
+│   │   │   ├── sections/
+│   │   │   └── ui/
+│   │   ├── config/
+│   │   ├── constants/
+│   │   ├── context/
+│   │   ├── data/
+│   │   ├── hooks/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   ├── routes/
+│   │   ├── seo/
+│   │   ├── services/
+│   │   ├── store/
+│   │   ├── styles/
+│   │   └── utils/
+│   ├── App.css
 │   ├── App.jsx
-
-│   └── main.jsx
-
-│
-
+│   ├── index.html
+│   ├── index.css
+│   ├── main.jsx
+│   ├── package.json
+│   └── package-lock.json
 ├── server/
-
 │   ├── src/
-
-│   │
-
-│   ├── config/
-
-│   ├── controllers/
-
-│   ├── middleware/
-
-│   ├── models/
-
-│   ├── routes/
-
-│   ├── services/
-
-│   ├── utils/
-
-│   ├── validators/
-
-│   ├── uploads/
-
-│   └── emails/
-
-│
-
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── database/
+│   │   ├── emails/
+│   │   ├── middlewares/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   └── validators/
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── .env
+│   └── .env.example
 ├── docs/
-
-├── README.md
-
-└── LICENSE
+│   ├── API.md
+│   ├── DATABASE.md
+│   └── PROJECT_PLAN.md
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-# 🚀 Installation
+# ⚙️ Prerequisites
 
-## Clone Repository
+- Node.js 18+ / 20+
+- npm 10+
+- MongoDB Atlas or local MongoDB instance
+- Git
+
+---
+
+# 🚀 Setup
+
+## 1. Clone repository
 
 ```bash
 git clone https://github.com/yourusername/nextgenai.git
+cd nextgenai
+```
+
+## 2. Install dependencies
+
+```bash
+cd server
+npm install
+cd ../client
+npm install
+```
+
+## 3. Configure environment variables
+
+### Server environment
+
+Create `server/.env` using these variables:
+
+```env
+PORT=5000
+MONGO_URI=mongodb+srv://manikhstu1_db_user:<password>@nextgenai.bpkckgo.mongodb.net/nextgenai?retryWrites=true&w=majority&authSource=admin
+JWT_SECRET=nextgenai_a_long_random_secret_2026_change_this
+JWT_EXPIRES_IN=7d
+CLIENT_URL=http://localhost:5173
+```
+
+### Optional fallback
+
+If Atlas SRV DNS lookup fails, use a standard connection string or local MongoDB:
+
+```env
+MONGO_URI=mongodb://127.0.0.1:27017/nextgenai
+MONGO_URI_FALLBACK=mongodb://127.0.0.1:27017/nextgenai
+```
+
+### Client environment
+
+Create `client/.env` if needed:
+
+```env
+VITE_API_URL=http://localhost:5000/api
 ```
 
 ---
+
+# ▶️ Run Locally
+
+## Start backend
+
+```bash
+cd server
+npm run dev
+```
+
+Backend URL: `http://localhost:5000`
+
+## Start frontend
+
+```bash
+cd client
+npm run dev
+```
+
+Frontend URL: `http://localhost:5173`
+
+---
+
+# 🔐 Admin Login
+
+Default seeded admin account:
+- Email: `admin@nextgenai.com`
+- Password: `Admin@123`
+
+Login page:
+
+```text
+http://localhost:5173/login
+```
+
+Admin dashboard:
+
+```text
+http://localhost:5173/admin/dashboard
+```
+
+---
+
+# 🧪 Database Seeding
+
+If your database is empty, seed initial data and the default admin user:
+
+```bash
+cd server
+node src/database/seed.js
+```
+
+If seeding fails, verify `MONGO_URI` and that MongoDB is reachable.
+
+---
+
+# 🔧 Troubleshooting
+
+## Backend health check
+
+Verify the API is available:
+
+```text
+http://localhost:5000/api/health
+```
+
+## Fix login issues
+
+1. Confirm backend is running.
+2. Confirm the seed script created the admin user.
+3. Confirm `server/.env` contains the correct `MONGO_URI`.
+4. If using Atlas, allow your IP in Atlas Network Access.
+5. Switch to a standard MongoDB URI if SRV lookups fail.
+
+## Common environment issues
+
+- `Invalid email or password` usually means the backend cannot read the admin user from the DB.
+- `querySrv ECONNREFUSED` means Atlas SRV DNS is blocked or the URI is invalid.
+
+---
+
+# 📦 Scripts
+
+## Frontend
+
+```bash
+cd client
+npm run dev
+npm run build
+```
+
+## Backend
+
+```bash
+cd server
+npm run dev
+```
+
+---
+
+# 🧩 Architecture Overview
+
+## Frontend
+- Component-driven React app
+- Route-based pages and admin protection
+- Global theme support
+- Data requests via Axios services
+- Reusable UI components and custom hooks
+
+## Backend
+- Express REST API
+- MongoDB models with Mongoose
+- Authentication using JWT
+- Request validation and error handling middleware
+- File upload support and Cloudinary integration
+- Email notifications via Nodemailer
+
+---
+
+# 📌 Notes
+
+- Keep `server/.env` private and out of source control.
+- Use `server/.env.example` as a template.
+- Update MongoDB credentials before deploying.
+- Rerun the seed script if the default admin account is missing.
+
+---
+
+# 📫 Support
+
+If you need help, start by checking these:
+- backend status
+- MongoDB connection
+- seed script output
+- `.env` values
+
+Then retry login after confirming the database and server are both healthy.
+
 
 ## Navigate
 
